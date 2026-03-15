@@ -1,0 +1,50 @@
+[
+  {
+    "id": "article-midcang",
+    "filename": "article-midcang-reform.png",
+    "category": "article",
+    "prompt": "Article thumbnail for 'MedCanG-Reform 2026'. Modern illustration of German parliament building (Bundestag) silhouette with cannabis leaf overlay and reform/change arrows. Color scheme: German flag colors (black, red, gold) blended with green (#166534). Professional, political, educational style. 16:9 aspect ratio, suitable for article header.",
+    "size": "1200x630",
+    "negative_prompt": "realistic building, text, cluttered, dark, political propaganda"
+  },
+  {
+    "id": "article-telemedizin",
+    "filename": "article-telemedizin.png",
+    "category": "article",
+    "prompt": "Article thumbnail for 'Telemedizin Cannabis'. Modern illustration of laptop/screen with medical video call interface and cannabis leaf symbol. Digital health theme. Colors: tech blue (#3b82f6), medical green (#16a34a), clean white. Professional telemedicine aesthetic. 16:9 aspect ratio.",
+    "size": "1200x630",
+    "negative_prompt": "realistic doctor, patient, cluttered, dark, impersonal"
+  },
+  {
+    "id": "article-erste-schritte",
+    "filename": "article-erste-schritte.png",
+    "category": "article",
+    "prompt": "Article thumbnail for 'Erste Schritte mit Cannabis'. Modern illustration of journey/path starting point with cannabis plant at destination. Beginner-friendly, welcoming. Colors: optimistic green (#22c55e), sunny yellow (#fef08a), path brown (#92400e). Motivational, simple design. 16:9 aspect ratio.",
+    "size": "1200x630",
+    "negative_prompt": "realistic person, confused, dark, complicated, overwhelming"
+  },
+  {
+    "id": "article-csc-gruenden",
+    "filename": "article-csc-gruenden.png",
+    "category": "article",
+    "prompt": "Article thumbnail for 'CSC gründen'. Modern illustration of people coming together to build/create, with cannabis plant symbol. Community founding theme. Colors: cooperative purple (#9333ea), growth green (#16a34a), warm yellow (#facc15). Collaborative, optimistic mood. 16:9 aspect ratio.",
+    "size": "1200x630",
+    "negative_prompt": "realistic people, business suits, dark, exclusive, corporate"
+  },
+  {
+    "id": "article-anbau-guide",
+    "filename": "article-anbau-guide.png",
+    "category": "article",
+    "prompt": "Article thumbnail for 'Anbau-Anleitung'. Modern illustration of hands carefully tending to stylized cannabis plant. Nurturing, educational theme. Colors: natural greens (#16a34a, #22c55e), earth tones (#92400e), fresh accents. Helpful, detailed aesthetic. 16:9 aspect ratio.",
+    "size": "1200x630",
+    "negative_prompt": "realistic hands, dirt, messy, dark, amateur"
+  },
+  {
+    "id": "article-kcang",
+    "filename": "article-kcang.png",
+    "category": "article",
+    "prompt": "Article thumbnail for 'KCanG Erklärung'. Modern illustration of legal document with highlighted sections and cannabis symbol. Educational, clarity theme. Colors: legal blue (#1e3a5f), clarity green (#16a34a), accent gold (#facc15). Professional, informative style. 16:9 aspect ratio.",
+    "size": "1200x630",
+    "negative_prompt": "realistic document, text, cluttered, dark, boring"
+  }
+]

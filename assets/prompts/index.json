@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-03-15",
+  "generated_by": "Kimi Claw",
+  "description": "Bild-Prompts für Cannabis-Profis.de - Generiert mit nano banana 2",
+  "prompts_location": "assets/prompts/",
+  "output_location": "assets/images/",
+  "categories": [
+    {
+      "name": "Hero Banner",
+      "file": "hero_prompts.json",
+      "count": 5,
+      "description": "Große Hero-Bilder für Homepage und Kategorie-Seiten"
+    },
+    {
+      "name": "Kategorie Icons",
+      "file": "category_prompts.json",
+      "count": 5,
+      "description": "Quadratische Icons für Kategorie-Karten"
+    },
+    {
+      "name": "Artikel Thumbnails",
+      "file": "article_prompts.json",
+      "count": 6,
+      "description": "16:9 Thumbnails für Artikel-Header"
+    },
+    {
+      "name": "Icons",
+      "file": "icon_list.json",
+      "count": 10,
+      "description": "SVG Icons für UI (werden als Vektor erstellt)"
+    }
+  ],
+  "total_images": 26,
+  "style_guide": "style_guide.json"
+}

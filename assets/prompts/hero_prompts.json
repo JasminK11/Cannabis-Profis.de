@@ -1,0 +1,42 @@
+[
+  {
+    "id": "hero-main",
+    "filename": "hero-main.png",
+    "category": "hero",
+    "prompt": "Wide panoramic hero banner for cannabis education website. Abstract geometric composition with cannabis leaf silhouette integrated into modern design. Color palette: deep forest green (#166534) gradients transitioning to bright lime green (#22c55e), with golden yellow (#facc15) accent highlights. Clean, professional medical/educational aesthetic. Subtle hemp plant patterns in background. Modern minimalist style, no text, no people, abstract botanical elements. 16:9 aspect ratio, high resolution.",
+    "size": "1920x1080",
+    "negative_prompt": "text, people, smoking, cartoon, dark, muddy colors, cluttered"
+  },
+  {
+    "id": "hero-recht",
+    "filename": "hero-recht.png",
+    "category": "hero",
+    "prompt": "Legal/justice themed hero image for cannabis law section. Modern minimalist illustration of scales of justice combined with cannabis leaf motif. Color scheme: professional navy blue (#1e3a5f) with green (#166534) accents and gold (#facc15) highlights. Clean lines, geometric shapes, legal documents stylized in background. Trustworthy, authoritative aesthetic. Abstract, no people. 16:9 aspect ratio.",
+    "size": "1920x600",
+    "negative_prompt": "people, faces, realistic gavel, cluttered, dark, ominous"
+  },
+  {
+    "id": "hero-anbau",
+    "filename": "hero-anbau.png",
+    "category": "hero",
+    "prompt": "Growth/cultivation themed hero image for cannabis growing section. Modern illustration showing stylized cannabis plant growth stages from seed to mature plant. Color palette: vibrant greens (#16a34a to #22c55e), warm sunlight yellows (#fef08a), fresh earth tones. Clean geometric plant illustrations, scientific/educational style. Light, airy, optimistic mood. No photorealism, vector-like style. 16:9 aspect ratio.",
+    "size": "1920x600",
+    "negative_prompt": "realistic plants, soil closeups, pests, brown, dying plants, cluttered"
+  },
+  {
+    "id": "hero-csc",
+    "filename": "hero-csc.png",
+    "category": "hero",
+    "prompt": "Community/social themed hero for Cannabis Social Club section. Modern illustration of diverse abstract human silhouettes forming a circle around stylized cannabis plant symbol. Color palette: warm purple (#9333ea), green (#166534), community yellow (#facc15). Friendly, inclusive, welcoming atmosphere. Geometric, clean design. Modern cooperative aesthetic. 16:9 aspect ratio.",
+    "size": "1920x600",
+    "negative_prompt": "realistic people, faces, smoking, party scene, dark, exclusive"
+  },
+  {
+    "id": "hero-medizin",
+    "filename": "hero-medizin.png",
+    "category": "hero",
+    "prompt": "Medical/healthcare themed hero for medical cannabis section. Modern minimalist illustration combining medical cross symbol with cannabis leaf. Color scheme: clean white background, medical blue (#3b82f6), healing green (#16a34a), professional accents. Scientific, trustworthy, sterile but warm aesthetic. Abstract molecular patterns in background. 16:9 aspect ratio.",
+    "size": "1920x600",
+    "negative_prompt": "realistic pills, syringes, suffering patients, clinical cold, dark"
+  }
+]

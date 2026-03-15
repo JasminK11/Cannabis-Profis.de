@@ -1,0 +1,42 @@
+[
+  {
+    "id": "cat-recht",
+    "filename": "category-recht.png",
+    "category": "category",
+    "prompt": "Square icon for 'Recht & Gesetze' category. Minimalist illustration of legal documents with cannabis leaf watermark. Clean white background. Colors: professional green (#166534), gold accent (#facc15). Simple, modern icon style suitable for card thumbnail. Geometric, flat design. 1:1 aspect ratio.",
+    "size": "800x800",
+    "negative_prompt": "text, realistic documents, cluttered, dark"
+  },
+  {
+    "id": "cat-anbau",
+    "filename": "category-anbau.png",
+    "category": "category",
+    "prompt": "Square icon for 'Anbau' category. Minimalist illustration of stylized cannabis plant in pot. Clean white background. Colors: vibrant green (#22c55e), natural earth tones. Simple, modern icon style. Geometric plant representation. Growth and nurturing theme. 1:1 aspect ratio.",
+    "size": "800x800",
+    "negative_prompt": "realistic plant, soil mess, cluttered, dark, brown"
+  },
+  {
+    "id": "cat-csc",
+    "filename": "category-csc.png",
+    "category": "category",
+    "prompt": "Square icon for 'Cannabis-Clubs' category. Minimalist illustration of community building/house icon with cannabis leaf symbol. Clean white background. Colors: welcoming purple (#9333ea), community green (#16a34a). Simple, modern icon style. Cooperative, social theme. 1:1 aspect ratio.",
+    "size": "800x800",
+    "negative_prompt": "realistic building, people, cluttered, dark, exclusive"
+  },
+  {
+    "id": "cat-medizin",
+    "filename": "category-medizin.png",
+    "category": "category",
+    "prompt": "Square icon for 'Medizinisch' category. Minimalist illustration of medical cross merged with cannabis leaf. Clean white background. Colors: healing green (#16a34a), medical blue (#3b82f6), clean white. Simple, modern icon style. Professional healthcare theme. 1:1 aspect ratio.",
+    "size": "800x800",
+    "negative_prompt": "realistic medical equipment, pills, cold, clinical, dark"
+  },
+  {
+    "id": "cat-news",
+    "filename": "category-news.png",
+    "category": "category",
+    "prompt": "Square icon for 'News' category. Minimalist illustration of newspaper/document with cannabis industry symbol. Clean white background. Colors: news blue (#1e40af), fresh green (#22c55e). Modern, dynamic feel. Simple icon style. Information/updates theme. 1:1 aspect ratio.",
+    "size": "800x800",
+    "negative_prompt": "realistic newspaper, text, cluttered, dark, old"
+  }
+]

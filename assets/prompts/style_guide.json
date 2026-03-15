@@ -1,0 +1,25 @@
+{
+  "project": "Cannabis-Profis.de",
+  "style_guide": {
+    "art_style": "Modern, clean digital illustration",
+    "color_palette": {
+      "primary": "#166534 (green-800)",
+      "secondary": "#facc15 (yellow-400)",
+      "accent": "#dcfce7 (green-100)",
+      "background": "#ffffff",
+      "text": "#111827"
+    },
+    "mood": "Professional, trustworthy, educational, modern",
+    "avoid": [
+      "Direct cannabis consumption imagery",
+      "Stoner stereotypes",
+      "Overly dark/moody aesthetics",
+      "Cartoonish styles"
+    ]
+  },
+  "output_format": {
+    "tool": "nano banana 2",
+    "recommended_size": "1920x1080 for hero, 800x600 for categories",
+    "format": "PNG with transparency where noted"
+  }
+}

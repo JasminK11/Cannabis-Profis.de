@@ -1,0 +1,72 @@
+[
+  {
+    "id": "icon-check",
+    "filename": "icon-check.svg",
+    "category": "icon",
+    "type": "vector",
+    "description": "Checkmark icon for verified information, green color"
+  },
+  {
+    "id": "icon-warning",
+    "filename": "icon-warning.svg",
+    "category": "icon",
+    "type": "vector",
+    "description": "Warning icon for legal notices, yellow/amber color"
+  },
+  {
+    "id": "icon-info",
+    "filename": "icon-info.svg",
+    "category": "icon",
+    "type": "vector",
+    "description": "Info icon for additional information, blue color"
+  },
+  {
+    "id": "icon-leaf",
+    "filename": "icon-leaf.svg",
+    "category": "icon",
+    "type": "vector",
+    "description": "Simplified cannabis leaf icon, brand green color"
+  },
+  {
+    "id": "icon-calendar",
+    "filename": "icon-calendar.svg",
+    "category": "icon",
+    "type": "vector",
+    "description": "Calendar icon for events and dates"
+  },
+  {
+    "id": "icon-location",
+    "filename": "icon-location.svg",
+    "category": "icon",
+    "type": "vector",
+    "description": "Location pin icon for CSC and doctor directories"
+  },
+  {
+    "id": "icon-search",
+    "filename": "icon-search.svg",
+    "category": "icon",
+    "type": "vector",
+    "description": "Search/magnifying glass icon"
+  },
+  {
+    "id": "icon-arrow-right",
+    "filename": "icon-arrow-right.svg",
+    "category": "icon",
+    "type": "vector",
+    "description": "Arrow right for CTAs and navigation"
+  },
+  {
+    "id": "icon-download",
+    "filename": "icon-download.svg",
+    "category": "icon",
+    "type": "vector",
+    "description": "Download icon for guides and PDFs"
+  },
+  {
+    "id": "icon-share",
+    "filename": "icon-share.svg",
+    "category": "icon",
+    "type": "vector",
+    "description": "Share icon for social sharing"
+  }
+]
