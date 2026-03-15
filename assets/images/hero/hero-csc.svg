@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cscHeroGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9333ea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cscGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#facc15;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Hintergrund -->
+  <rect width="1920" height="600" fill="url(#cscHeroGrad)" />
+  
+  <!-- Kreis von Menschen (abstrakt) -->
+  <g transform="translate(960, 300)">
+    <!-- Zentrales Cannabis-Symbol -->
+    <g fill="#22c55e" opacity="0.9">
+      <path d="M0 -60 Q25 -30, 0 10 Q-25 -30, 0 -60" />
+      <path d="M-15 -30 Q-40 -10, -25 20 Q-10 0, -15 -30" />
+      <path d="M15 -30 Q40 -10, 25 20 Q10 0, 15 -30" /
+      <line x1="0" y1="10" x2="0" y2="50" stroke="#22c55e" stroke-width="4" />
+    </g>
+    
+    <!-- Personen-Silhouetten im Kreis -->
+    <g fill="#facc15" opacity="0.7">
+      <!-- Person 1 -->
+      <circle cx="0" cy="-180" r="30" />
+      <rect x="-20" y="-150" width="40" height="70" rx="10" />
+      
+      <!-- Person 2 -->
+      <circle cx="160" cy="-90" r="30" />
+      <rect x="140" y="-60" width="40" height="70" rx="10" />
+      
+      <!-- Person 3 -->
+      <circle cx="160" cy="90" r="30" />
+      <rect x="140" y="120" width="40" height="70" rx="10" />
+      
+      <!-- Person 4 -->
+      <circle cx="0" cy="180" r="30" />
+      <rect x="-20" y="210" width="40" height="70" rx="10" />
+      
+      <!-- Person 5 -->
+      <circle cx="-160" cy="90" r="30" />
+      <rect x="-180" y="120" width="40" height="70" rx="10" />
+      
+      <!-- Person 6 -->
+      <circle cx="-160" cy="-90" r="30" />
+      <rect x="-180" y="-60" width="40" height="70" rx="10" />
+    </g>
+  </g>
+  
+  <!-- Dekorative Kreise -->
+  <circle cx="200" cy="100" r="100" fill="url(#cscGold)" opacity="0.2" />
+  <circle cx="1700" cy="400" r="150" fill="url(#cscGold)" opacity="0.15" />
+</svg>

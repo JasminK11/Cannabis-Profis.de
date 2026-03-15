@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="startGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Hintergrund -->
+  <rect width="1200" height="630" fill="url(#startGrad)" />
+  
+  <!-- Weg/Path -->
+  <path d="M100 550 Q400 450, 600 500 Q800 550, 1100 400" 
+        fill="none" stroke="#facc15" stroke-width="20" stroke-linecap="round" />
+  
+  <!-- Start-Punkt -->
+  <g transform="translate(100, 550)">
+    <circle r="40" fill="#fef08a" />
+    <text x="0" y="10" text-anchor="middle" fill="#166534" font-family="Arial, sans-serif" font-size="24" font-weight="bold">START</text>
+  </g>
+  
+  
+  <!-- Ziel-Punkt (Cannabis) -->
+  <g transform="translate(1100, 400)">
+    <circle r="60" fill="#facc15" />
+    
+    <g transform="scale(0.8)" fill="#166534">
+      <path d="M0 -50 Q25 -25, 0 15 Q-25 -25, 0 -50" />
+      <path d="M-20 -25 Q-45 -5, -30 30 Q-10 10, -20 -25" />
+      <path d="M20 -25 Q45 -5, 30 30 Q10 10, 20 -25" />
+      <line x1="0" y1="15" x2="0" y2="50" stroke="#166534" stroke-width="5" />
+    </g>
+  </g>
+  
+  
+  <!-- Zwischenstationen -->
+  <circle cx="350" cy="480" r="15" fill="white" opacity="0.8" />
+  
+  <circle cx="600" cy="500" r="15" fill="white" opacity="0.8" />
+  
+  <circle cx="850" cy="470" r="15" fill="white" opacity="0.8" />
+  
+  
+  <!-- Pfeil -->
+  <g transform="translate(800, 300)" stroke="white" stroke-width="6" fill="none" opacity="0.9">
+    <line x1="0" y1="50" x2="0" y2="-50" />
+    <path d="M-25 -25 L0 -50 L25 -25" />
+  </g>
+  
+  
+  <!-- Text-Banner -->
+  <rect x="100" y="80" width="1000" height="80" fill="#000000" opacity="0.6" rx="10" />
+  
+  <text x="600" y="135" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="44" font-weight="bold">Erste Schritte mit Cannabis</text>
+</svg>
