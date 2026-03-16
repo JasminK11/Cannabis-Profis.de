@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="medHeroGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="medWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#dcfce7;stop-opacity:0.5" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Hintergrund -->
+  <rect width="1920" height="600" fill="url(#medHeroGrad)" />
+  
+  <!-- Medizinisches Kreuz -->
+  <g transform="translate(960, 300)" opacity="0.9">
+    <rect x="-150" y="-45" width="300" height="90" fill="white" rx="20" />
+    <rect x="-45" y="-150" width="90" height="300" fill="white" rx="20" />
+    
+    <!-- Cannabis-Blatt im Zentrum -->
+    <g transform="scale(0.8)" fill="#16a34a">
+      <path d="M0 -60 Q30 -30, 0 20 Q-30 -30, 0 -60" />
+      <path d="M-20 -30 Q-50 -10, -35 30 Q-15 10, -20 -30" />
+      <path d="M20 -30 Q50 -10, 35 30 Q15 10, 20 -30" />
+      <line x1="0" y1="20" x2="0" y2="60" stroke="#16a34a" stroke-width="5" />
+    </g>
+  </g>
+  
+  <!-- Molekül-Strukturen (abstrakt) -->
+  <g fill="white" opacity="0.3">
+    <circle cx="200" cy="100" r="20" />
+    <circle cx="250" cy="140" r="15" />
+    <circle cx="300" cy="100" r="18" />
+    <line x1="200" y1="100" x2="250" y2="140" stroke="white" stroke-width="3" />
+    <line x1="250" y1="140" x2="300" y2="100" stroke="white" stroke-width="3" />
+  </g>
+  
+  
+  <g fill="white" opacity="0.25">
+    <circle cx="1600" cy="450" r="25" />
+    <circle cx="1660" cy="400" r="18" />
+    <circle cx="1720" cy="450" r="20" />
+    <line x1="1600" y1="450" x2="1660" y2="400" stroke="white" stroke-width="3" />
+    <line x1="1660" y1="400" x2="1720" y2="450" stroke="white" stroke-width="3" />
+  </g>
+  
+  <!-- Kreis-Elemente -->
+  <circle cx="150" cy="500" r="80" fill="url(#medWhite)" opacity="0.2" />
+  <circle cx="1800" cy="150" r="60" fill="url(#medWhite)" opacity="0.15" />
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="rechtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldRecht" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#facc15;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:0.5" />
+    </linearGradient>
+    
+    <filter id="glowRecht">
+      <feGaussianBlur stdDeviation="15" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Hintergrund -->
+  <rect width="1920" height="600" fill="url(#rechtGrad)" />
+  
+  <!-- Abstrakte Waage (Justiz) -->
+  <g transform="translate(960, 300)" opacity="0.8">
+    <!-- Säule -->
+    <rect x="-10" y="-80" width="20" height="160" fill="#facc15" opacity="0.6" />
+    
+    <!-- Balken -->
+    <rect x="-120" y="-90" width="240" height="8" fill="#facc15" rx="4" />
+    
+    <!-- Schalen -->
+    <path d="M-100 -90 Q-120 -40, -100 -20 Q-80 -40, -100 -90" fill="none" stroke="#facc15" stroke-width="3" />
+    <path d="M100 -90 Q80 -40, 100 -20 Q120 -40, 100 -90" fill="none" stroke="#facc15" stroke-width="3" />
+    
+    <!-- Cannabis-Blatt als Balance-Symbol -->
+    <g transform="translate(0, -60)" fill="#22c55e" opacity="0.7">
+      <path d="M0 -25 Q15 10, 0 35 Q-15 10, 0 -25 M0 35 L0 60" />
+    </g>
+  </g>
+  
+  <!-- Geometrische Elemente -->
+  <rect x="100" y="100" width="200" height="3" fill="#facc15" opacity="0.4" />
+  <rect x="1620" y="450" width="200" height="3" fill="#facc15" opacity="0.4" /
+  
+  <circle cx="200" cy="150" r="80" fill="none" stroke="#facc15" stroke-width="1" opacity="0.3" />
+  <circle cx="1720" cy="400" r="100" fill="none" stroke="#facc15" stroke-width="1" opacity="0.2" />
+  
+  <!-- Paragraphen-Symbole (abstrakt) -->
+  <g fill="#facc15" opacity="0.2">
+    <rect x="150" y="400" width="60" height="80" rx="5" />
+    <rect x="1700" y="150" width="50" height="70" rx="5" />
+  </g>
+</svg>

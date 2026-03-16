@@ -1,9 +1,5 @@
 import { Link } from 'react-router-dom';
 import { 
-  Scale, 
-  Sprout, 
-  Users, 
-  Stethoscope, 
   ArrowRight, 
   Calendar, 
   Clock, 
@@ -18,31 +14,93 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { 
-  quickLinksData, 
   popularArticlesData,
   faqData 
 } from '@/data/content';
 
-const iconMap: Record<string, React.ElementType> = {
-  Scale,
-  Sprout,
-  Users,
-  Stethoscope,
-};
+// Kategorie-Daten mit Bildern
+const quickLinksData = [
+  {
+    id: 'recht',
+    title: 'Recht & Gesetze',
+    description: 'KCanG, MedCanG und alle aktuellen Gesetzesänderungen',
+    href: '/recht',
+    image: '/images/categories/category-recht.svg',
+    color: 'from-blue-600 to-blue-800'
+  },
+  {
+    id: 'anbau',
+    title: 'Anbau',
+    description: 'Vom Samen bis zur Ernte: Schritt-für-Schritt Anleitungen',
+    href: '/anbau',
+    image: '/images/categories/category-anbau.svg',
+    color: 'from-green-600 to-green-800'
+  },
+  {
+    id: 'csc',
+    title: 'Cannabis-Clubs',
+    description: 'CSC finden, gründen und Mitglied werden',
+    href: '/cannabis-clubs',
+    image: '/images/categories/category-csc.svg',
+    color: 'from-purple-600 to-purple-800'
+  },
+  {
+    id: 'medizinisch',
+    title: 'Medizinisch',
+    description: 'Rezept, Ärzte, Apotheken und die MedCanG-Reform',
+    href: '/medizinisch',
+    image: '/images/categories/category-medizin.svg',
+    color: 'from-blue-500 to-green-600'
+  }
+];
+
+// News-Daten mit Bildern
+const latestNewsData = [
+  {
+    title: 'MedCanG-Reform: Was Patienten wissen müssen',
+    category: 'Gesetze',
+    date: '15.03.2026',
+    href: '/recht/medcang-reform-2026',
+    image: '/images/articles/article-midcang.svg'
+  },
+  {
+    title: 'Telemedizin Cannabis: Änderungen 2026',
+    category: 'Medizinisch',
+    date: '12.03.2026',
+    href: '/medizinisch/telemedizin',
+    image: '/images/articles/article-telemedizin.svg'
+  },
+  {
+    title: 'Erste Schritte mit Cannabis',
+    category: 'Anbau',
+    date: '10.03.2026',
+    href: '/anbau/erste-schritte',
+    image: '/images/articles/article-erste-schritte.svg'
+  }
+];
 
 export default function Home() {
   return (
     <div className="animate-fade-in">
-      {/* Hero Section */}
+      {/* Hero Section mit Hintergrundbild */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        {/* Background Effects */}
-        <div className="absolute inset-0 gradient-hero" />
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/images/hero/hero-main.svg" 
+            alt="" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+        </div>
+        
+        {/* Animated Effects */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-dark/30 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: '1s' }} />
         
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-8 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-8 animate-fade-in-up backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-primary-light animate-pulse" />
               <span className="text-primary-light text-sm font-medium">Aktuell: MedCanG-Reform 2026</span>
             </div>
@@ -52,7 +110,7 @@ export default function Home() {
               <span className="text-gradient">Deutschland</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-white/60 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               Deine vertrauenswürdige Quelle für aktuelle Gesetze, Anbau-Tipps, 
               Cannabis-Clubs und medizinische Informationen.
             </p>
@@ -81,7 +139,7 @@ export default function Home() {
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="stat-value mb-1">{stat.value}</div>
-                  <div className="text-white/50 text-sm">{stat.label}</div>
+                  <div className="text-white/70 text-sm">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -90,13 +148,13 @@ export default function Home() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-2">
+          <div className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-2">
             <div className="w-1.5 h-1.5 rounded-full bg-primary-light" />
           </div>
         </div>
       </section>
 
-      {/* Quick Links Section */}
+      {/* Quick Links Section mit Bildern */}
       <section className="section-padding relative">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
         
@@ -113,37 +171,41 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {quickLinksData.map((link) => {
-              const Icon = iconMap[link.icon];
-              return (
-                <Link key={link.id} to={link.href} className="group">
-                  <div className="feature-card h-full">
-                    <div className="feature-icon group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="w-7 h-7 text-primary-light" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary-light transition-colors">
-                      {link.title}
-                    </h3>
-                    <p className="text-white/50 text-sm leading-relaxed mb-4">
-                      {link.description}
-                    </p>
-                    <div className="flex items-center text-primary-light text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                      Mehr erfahren
-                      <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                    </div>
+            {quickLinksData.map((link) => (
+              <Link key={link.id} to={link.href} className="group">
+                <div className="feature-card h-full overflow-hidden">
+                  {/* Bild */}
+                  <div className="relative h-48 mb-4 rounded-xl overflow-hidden">
+                    <img 
+                      src={link.image} 
+                      alt={link.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className={`absolute inset-0 bg-gradient-to-t ${link.color} opacity-60`} />
                   </div>
-                </Link>
-              );
-            })}
+                  
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary-light transition-colors">
+                    {link.title}
+                  </h3>
+                  <p className="text-white/50 text-sm leading-relaxed mb-4">
+                    {link.description}
+                  </p>
+                  <div className="flex items-center text-primary-light text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                    Mehr erfahren
+                    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Featured Content Grid */}
+      {/* Featured Content Grid mit Bildern */}
       <section className="section-padding relative">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Latest News */}
+            {/* Latest News mit Bildern */}
             <div>
               <div className="flex items-center justify-between mb-8">
                 <div>
@@ -163,38 +225,30 @@ export default function Home() {
               </div>
 
               <div className="space-y-4">
-                {[
-                  {
-                    title: 'MedCanG-Reform: Was Patienten wissen müssen',
-                    category: 'Gesetze',
-                    date: '15.03.2026',
-                    href: '/recht/medcang-reform-2026',
-                  },
-                  {
-                    title: 'Cannabis-Gesetz 2026: Alle Änderungen im Überblick',
-                    category: 'Gesetze',
-                    date: '12.03.2026',
-                    href: '/recht/cannabis-gesetz-2026',
-                  },
-                  {
-                    title: 'Neue CSC in Deutschland: März 2026',
-                    category: 'CSC',
-                    date: '10.03.2026',
-                    href: '/cannabis-clubs/verzeichnis',
-                  },
-                ].map((news, index) => (
+                {latestNewsData.map((news, index) => (
                   <Link key={index} to={news.href} className="group block">
-                    <div className="card-dark p-5 hover:border-primary/40">
-                      <div className="flex items-center gap-3 mb-3">
-                        <Badge variant="secondary" className="text-xs">{news.category}</Badge>
-                        <span className="text-white/40 text-xs flex items-center gap-1">
-                          <Calendar className="w-3 h-3" />
-                          {news.date}
-                        </span>
+                    <div className="card-dark p-4 hover:border-primary/40 flex gap-4">
+                      {/* Thumbnail */}
+                      <div className="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+                        <img 
+                          src={news.image} 
+                          alt={news.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
                       </div>
-                      <h3 className="font-semibold text-white group-hover:text-primary-light transition-colors line-clamp-2">
-                        {news.title}
-                      </h3>
+                      
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-2">
+                          <Badge variant="secondary" className="text-xs">{news.category}</Badge>
+                          <span className="text-white/40 text-xs flex items-center gap-1">
+                            <Calendar className="w-3 h-3" />
+                            {news.date}
+                          </span>
+                        </div>
+                        <h3 className="font-semibold text-white group-hover:text-primary-light transition-colors line-clamp-2 text-sm">
+                          {news.title}
+                        </h3>
+                      </div>
                     </div>
                   </Link>
                 ))}
@@ -244,10 +298,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MedCanG Alert Section */}
+      {/* MedCanG Alert Section mit Bild */}
       <section className="section-padding relative">
         <div className="container-custom">
           <div className="gradient-card rounded-2xl p-8 md:p-10 relative overflow-hidden">
+            {/* Hintergrundbild */}
+            <div className="absolute inset-0 opacity-20">
+              <img 
+                src="/images/articles/article-midcang.svg" 
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl" />
             
             <div className="relative flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
@@ -327,8 +389,15 @@ export default function Home() {
       <section className="section-padding relative">
         <div className="container-custom">
           <div className="relative rounded-3xl overflow-hidden">
-            {/* Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary-dark/10 to-background" />
+            {/* Background mit Bild */}
+            <div className="absolute inset-0">
+              <img 
+                src="/images/hero/hero-main.svg" 
+                alt=""
+                className="w-full h-full object-cover opacity-30"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-primary-dark/20 to-background" />
+            </div>
             <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-[100px]" />
             <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary-dark/20 rounded-full blur-[80px]" />
             
@@ -339,7 +408,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 Bleib auf dem Laufenden
               </h2>
-              <p className="text-white/50 mb-8 max-w-lg mx-auto">
+              <p className="text-white/70 mb-8 max-w-lg mx-auto">
                 Erhalte aktuelle Updates zu Gesetzen, Anbau-Tipps und Neuigkeiten 
                 direkt in dein Postfach.
               </p>
@@ -354,9 +423,9 @@ export default function Home() {
                 </Button>
               </form>
               <div className="flex flex-wrap justify-center gap-3 mt-6">
-                <span className="text-white/40 text-sm">✓ Kostenlos</span>
-                <span className="text-white/40 text-sm">✓ Jederzeit abmeldbar</span>
-                <span className="text-white/40 text-sm">✓ Kein Spam</span>
+                <span className="text-white/50 text-sm">✓ Kostenlos</span>
+                <span className="text-white/50 text-sm">✓ Jederzeit abmeldbar</span>
+                <span className="text-white/50 text-sm">✓ Kein Spam</span>
               </div>
             </div>
           </div>

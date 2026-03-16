@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cscGruendGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9333ea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Hintergrund -->
+  <rect width="1200" height="630" fill="url(#cscGruendGrad)" />
+  
+  <!-- Menschen, die zusammenkommen -->
+  <g transform="translate(600, 350)">
+    <!-- Person 1 -->
+    <g transform="translate(-150, 50)" fill="#facc15">
+      <circle cy="-40" r="35" />
+      <rect x="-25" y="0" width="50" height="80" rx="10" />
+    </g>
+    
+    <!-- Person 2 -->
+    <g transform="translate(0, -30)" fill="#facc15">
+      <circle cy="-40" r="40" />
+      <rect x="-28" y="0" width="56" height="90" rx="10" />
+      
+      <!-- Hand nach oben -->
+      <rect x="20" y="-80" width="15" height="50" rx="5" />
+    </g>
+    
+    <!-- Person 3 -->
+    <g transform="translate(150, 50)" fill="#facc15">
+      <circle cy="-40" r="35" />
+      <rect x="-25" y="0" width="50" height="80" rx="10" />
+    </g>
+    
+    
+    <!-- Gemeinsames Symbol (Cannabis) -->
+    <g transform="translate(0, -120)" fill="#22c55e">
+      <path d="M0 -40 Q20 -20, 0 15 Q-20 -20, 0 -40" />
+      <path d="M-15 -20 Q-35 -5, -25 25 Q-10 10, -15 -20" />
+      <path d="M15 -20 Q35 -5, 25 25 Q10 10, 15 -20" />
+      <line x1="0" y1="15" x2="0" y2="45" stroke="#22c55e" stroke-width="4" />
+    </g>
+    
+    
+    <!-- Verbindungslinien -->
+    <path d="M-150 50 Q-75 0, 0 -30" fill="none" stroke="#facc15" stroke-width="3" opacity="0.5" />
+    
+    <path d="M150 50 Q75 0, 0 -30" fill="none" stroke="#facc15" stroke-width="3" opacity="0.5" />
+  </g>
+  
+  
+  <!-- Plus-Symbole (Gründung) -->
+  <g transform="translate(200, 150)" stroke="#facc15" stroke-width="8" stroke-linecap="round">
+    <line x1="0" y1="-20" x2="0" y2="20" />
+    <line x1="-20" y1="0" x2="20" y2="0" />
+  </g>
+  
+  
+  <g transform="translate(1000, 200)" stroke="#facc15" stroke-width="8" stroke-linecap="round">
+    <line x1="0" y1="-20" x2="0" y2="20" />
+    <line x1="-20" y1="0" x2="20" y2="0" />
+  </g>
+  
+  
+  <!-- Text-Banner -->
+  <rect x="100" y="520" width="1000" height="80" fill="#000000" opacity="0.6" rx="10" />
+  
+  <text x="600" y="575" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="44" font-weight="bold">CSC gründen</text>
+</svg>

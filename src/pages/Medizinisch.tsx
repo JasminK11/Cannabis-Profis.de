@@ -31,8 +31,17 @@ export default function Medizinisch() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="gradient-hero text-white py-16 md:py-20">
-        <div className="container-custom">
+      <section className="relative text-white py-16 md:py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="/images/hero/hero-medizin.svg" 
+            alt="" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background" />
+        </div>
+        
+        <div className="container-custom relative z-10">
           <div className="max-w-3xl">
             <Badge className="bg-amber-500 text-white mb-4">
               <Stethoscope className="w-4 h-4 mr-1" />
